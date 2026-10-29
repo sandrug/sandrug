@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="50" viewBox="0 0 130 50">
+  <style>
+    text {
+      font-family: 'Courier New', Consolas, monospace;
+      font-size: 28px;
+      font-weight: 700;
+      fill: #1f2328;
+    }
+    .cursor { fill: #1f2328; }
+    @media (prefers-color-scheme: dark) {
+      text, .cursor { fill: #e6edf3; }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="reveal">
+      <rect x="0" y="0" width="0" height="50">
+        <animate attributeName="width" calcMode="discrete" dur="5s" repeatCount="indefinite"
+          keyTimes="0;0.04;0.08;0.12;0.16;0.2;0.24;0.28;0.6;0.64;0.68;0.72;0.76;0.8;0.84"
+          values="0;16.8;33.6;50.4;67.2;84;100.8;117.6;100.8;84;67.2;50.4;33.6;16.8;0" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <text x="0" y="34" clip-path="url(#reveal)">Connect</text>
+
+  <rect class="cursor" x="0" y="8" width="3" height="30">
+    <animate attributeName="x" calcMode="discrete" dur="5s" repeatCount="indefinite"
+      keyTimes="0;0.04;0.08;0.12;0.16;0.2;0.24;0.28;0.6;0.64;0.68;0.72;0.76;0.8;0.84"
+      values="0;16.8;33.6;50.4;67.2;84;100.8;117.6;100.8;84;67.2;50.4;33.6;16.8;0" />
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" />
+  </rect>
+</svg>
